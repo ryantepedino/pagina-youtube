@@ -11,7 +11,7 @@ body {
   background: rgba(33, 33, 33, 0.98);
   z-index: 1;
   position: relative;
-  padding-top: 60px; /* para evitar que o conteúdo fique sob a navbar */
+  padding-top: 60px;
 }
 
 i, span {
@@ -32,15 +32,11 @@ i, span {
   z-index: 10;
 }
 
-/* Grupos de elementos */
-.left-section,
-.search,
-.icons {
+.left-section, .search, .icons {
   display: flex;
   align-items: center;
 }
 
-/* Menu e logo */
 .left-section i {
   font-size: 24px;
   margin-right: 20px;
@@ -51,7 +47,6 @@ i, span {
   cursor: pointer;
 }
 
-/* Busca */
 .search {
   height: 30px;
   flex: 1;
@@ -93,7 +88,6 @@ i, span {
   margin-left: 10px;
 }
 
-/* Ícones da direita */
 .icons i {
   margin-right: 25px;
   font-size: 25px;
@@ -120,7 +114,6 @@ i, span {
   justify-content: center;
 }
 
-/* Imagem de perfil */
 .profile-icon {
   width: 35px;
   height: 35px;
@@ -129,21 +122,80 @@ i, span {
   cursor: pointer;
 }
 
-.sidebar{
-    position: fixed;
-    left: 0px;
-    top: 60px;
-    width: 240px;
-    height: auto;
-    padding-right: 10px;
-    color: rgba(255, 255, 255,0.8);
+/* === SIDEBAR === */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 60px;
+  width: 240px;
+  background-color: #212121;
+  padding-right: 10px;
+  color: rgba(255, 255, 255, 0.8);
 }
 
-.sidebar .links{
-    padding-bottom: 15px;
-    border-bottom: 1px solid gray;
+.sidebar .links {
+  padding-bottom: 15px;
+  border-bottom: 1px solid gray;
 }
 
-.sidebar .links-2{
-    padding-top: 15px;
+.sidebar .links-2 {
+  padding-top: 15px;
+}
+
+.sidebar .icon {
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar .icon:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.sidebar .icon a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Ícone dentro do link */
+.sidebar .icon a i {
+  margin-right: 20px;
+  font-size: 24px;
+}
+
+/* Seção de inscrições */
+.sidebar .subscription h4 {
+  margin: 10px 0;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.sidebar .subscription .icon {
+  padding: 8px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar .subscription .icon:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.sidebar .subscription .icon a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.sidebar .subscription .icon a i {
+  margin-right: 20px;
+  font-size: 24px;
 }
