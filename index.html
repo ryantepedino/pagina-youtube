@@ -1,15 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <title>YouTube</title>
 </head>
 
 <body>
-  Hello world
+  <nav class="navbar">
+    <div class="left-section">
+      <i class="material-icons">menu</i>
+      <img src="logo.png" alt="Logo YouTube" class="logo">
+    </div>
+
+    <div class="search">
+      <input type="text" placeholder="Pesquisar">
+      <div class="searchbtn">
+        <i class="material-icons">search</i>
+      </div>
+      <i class="material-icons">mic</i>
+    </div>
+
+    <div class="icons">
+      <i class="material-icons">video_call</i>
+      <i class="material-icons">apps</i>
+      <div class="notification">
+        <i class="material-icons">notifications</i>
+        <span class="notification-count" data-count="9+"></span>
+      </div>
+      <img src="logomarca.png" alt="Perfil" class="profile-icon">
+    </div>
+  </nav>
+
+  <div class="sidebar">
+    <div class="links">
+
+      <div class="icon"></div>
+      <a href=""><i class="material-icons">home</i><samp>Home</samp></a>
+    </div>
+
+    <div class="icon">
+      <a href=""><i class="material-icons">explore</i><samp>Explorar</samp></a>
+    </div>
+
+    <div class="icon">
+      <a href=""><i class="material-icons">subscriptions</i><samp>Inscrições</samp></a>
+    </div>
+
+
+    <div class="links links-2">
+
+      <div class="icon">
+        <a href="">
+          <i class="material-icons">video_library</i>
+          <samp>Biblioteca</samp>
+        </a>
+      </div>
+
+      <div class="icon">
+        <a href="">
+          <i class="material-icons">history</i>
+          <samp>Histórico</samp>
+        </a>
+      </div>
+
+      <div class="icon">
+        <a href="">
+          <span class="material-icons">schedule</span>
+          <samp>Assistir mais tarde</samp>
+        </a>
+      </div>
+
+      <div class="icon">
+        <a href="">
+          <i class="material-icons">thumb_up</i>
+          <samp>Vídeos marcados</samp>
+        </a>
+      </div>
+    </div>
+      <div class="subscription links">
+           <h4>INSCRIÇÕES</h4>
+        
+          <div class="icon">
+             <a href=""><i class="material-icons">audiotrack</i>
+             <samp>Música</samp></a>
+           </div>
+           <div class="icon">
+              <a href=""><i class="material-icons">emoji_events</i>
+              <samp>Esporte</samp></a>
+            </div>
+           <div class="icon">
+              <a href=""><i class="material-icons">sports_esports</i>
+              <samp>Gaming</samp></a>
+            </div>
+        
+           <div class="icon">
+             <a href=""><i class="material-icons">movie</i>
+             <samp>Cinema</samp></a>
+           </div>
+        
+      </div>
+
+    </div>
+
+  </div>
+
   <script src="script.js"></script>
 </body>
 
